@@ -1,0 +1,51 @@
+@import "../../scss/variables";
+.scissors {
+  background-color: $scissorsBg;
+
+  &.active {
+    img {
+      width: 85px;
+      height: 100px;
+      @media (max-width: 520px) {
+        width: 55px;
+        height: 70px;
+      }
+      @media (max-width: 400px) {
+        width: 45px;
+        height: 60px;
+      }
+    }
+  }
+
+  &_body {
+    background-color: $white;
+    img {
+      width: 65px;
+      height: 80px;
+      transition: all 0.2s;
+      -webkit-transition: all 0.2s;
+      -moz-transition: all 0.2s;
+      -ms-transition: all 0.2s;
+      -o-transition: all 0.2s;
+
+      @media (max-width: 520px) {
+        width: 45px;
+        height: 60px;
+      }
+      @media (max-width: 400px) {
+        width: 35px;
+        height: 40px;
+      }
+    }
+  }
+  &:hover {
+    img {
+      animation-direction: alternate;
+      transform: rotate(35deg) scale(1.2);
+      -webkit-transform: rotate(35deg) scale(1.2);
+      -moz-transform: rotate(35deg) scale(1.2);
+      -ms-transform: rotate(35deg) scale(1.2);
+      -o-transform: rotate(35deg) scale(1.2);
+    }
+  }
+}

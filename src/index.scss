@@ -1,0 +1,52 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  scroll-behavior: smooth;
+  line-height: 1.5;
+  background: rgb(31, 55, 86);
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background: radial-gradient(circle, rgba(31, 55, 86, 1) 0%, rgba(30, 51, 82, 1) 18%, rgba(20, 21, 57, 1) 73%);
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}

@@ -1,0 +1,48 @@
+@import "../../scss/variables";
+.paper {
+  background-color: $paperBg;
+
+  &.active {
+    img {
+      width: 85px;
+      height: 100px;
+      @media (max-width: 520px) {
+        width: 55px;
+        height: 70px;
+      }
+      @media (max-width: 400px) {
+        width: 45px;
+        height: 60px;
+      }
+    }
+  }
+  &_body {
+    background-color: $white;
+    img {
+      width: 65px;
+      height: 80px;
+      transition: all 0.2s;
+      -webkit-transition: all 0.2s;
+      -moz-transition: all 0.2s;
+      -ms-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      @media (max-width: 520px) {
+        width: 45px;
+        height: 60px;
+      }
+      @media (max-width: 400px) {
+        width: 35px;
+        height: 40px;
+      }
+    }
+  }
+  &:hover {
+    img {
+      transform: scale(1.2);
+      -webkit-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      -o-transform: scale(1.2);
+    }
+  }
+}
